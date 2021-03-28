@@ -13,7 +13,6 @@ html_soup = BeautifulSoup(page_html, 'html.parser')
                          
 
 #aqui empece a llamar a la informacion que necesito con los div en su codigo html
-zapatillas = html_soup.find_all('div', class_='product-block')
 #este de arriba es el anuncio dentro de la pag web
 for calzado in zapatillas:
     titulo = html_soup.find_all('div', class_='productName')
